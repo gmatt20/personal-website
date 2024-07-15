@@ -137,3 +137,13 @@ p{
   display: flex;
   justify-content: flex-end;
 }
+
+footer > ul{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+  gap: 50px;
+  list-style: none;
+  padding: 10px 80px;
+}
