@@ -1,144 +1,172 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-/* General Configurations */
+/* General Styling */
 
-*{
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-html{
-  /* height: 100%; */
-}
-body{
-
-  /* min-height: 100%; */
-  /* background-color: #254336; */
-  color: #F5EFE6;
+body {
+  color: #f5efe6;
   font-family: "Poppins", sans-serif;
 }
-.main1{
+.main1 {
   padding: 30px 80px;
   background-color: #254336;
-  /* background-image: url("./images/shelby-miller-hL0xl0qmxYM-unsplash.jpg"); */
+}
+h1 {
+  font-size: 50px;
+}
+p {
+  font-size: 20px;
 }
 
-/* Nav Configuration */
+/* Nav Styling */
 
-header{
+header {
   background-color: white;
 }
 
-nav{
+nav {
   display: flex;
   justify-content: space-between;
   padding: 5px 80px;
 }
-nav ul{
+nav ul {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 50px;
   list-style: none;
 }
-a{
+a {
   color: black;
   text-decoration: none;
 }
 
-/* First Section Configuration */
+/* Landing Section Styling */
 
-.landing-info{
+.landing-info {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 100px;
 }
-.left-container{
-  min-width: 300px;
-}
-h1{
-  font-size: 50px;
+.landing-h1 {
   line-height: 55px;
   margin-bottom: 50px;
 }
-p{
-  font-size: 20px;
-}
 
-.typerwriter-container{
+/* Background Image Section Styling */
+
+.typerwriter-container {
   position: relative;
-  text-align: center;
 }
 
-.typewriter{
+.typewriter {
   margin-top: 100px;
+  margin-bottom: 100px;
   width: 100%;
   filter: brightness(50%);
 }
-.img-text{
+.img-text {
+  font-size: 80px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: #F5EFE6;
+  color: #f5efe6;
 }
 
-.projects{
-  margin-top: 100px;
+/* Project Showcase Section + Skill Set Section Styling */
+
+.proj-h1 {
+  margin-top: 80px;
+  font-size: 80px;
+}
+.projects-section,
+.skills-section {
   background-color: #254336;
-  color: #F5EFE6;
+  color: #f5efe6;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
-.proj-container{
-  margin: 100px;
+.proj-container,
+.skills-container {
+  margin: 80px;
   color: black;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  grid-auto-flow: column;
   background-color: #254336;
-  min-width: 100px;
-  max-width: 800px;
+  gap: 30px;
+  max-width: 900px;
 }
-.proj{
+.proj,
+.skills {
+  border: solid 5px;
   border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   flex-direction: column;
-  background-color: #F5EFE6;
+  background-color: #f5efe6;
   margin: 10px;
+  height: 400px;
+  width: 400px;
+}
+.proj-pic {
+  border: solid 3px;
+  border-radius: 5px;
+  margin-top: 10px;
   height: 300px;
   width: 300px;
 }
-.proj-pic{
-  border-radius: 5px;
-  background-color: red;
-  margin: 10px;
-  height: 200px;
-  width: 200px;
+.proj-descript {
+  margin-bottom: 10px;
 }
 
-.quote-container{
-  margin: 100px;
+/* Quote Section Styling */
+
+.quote-container {
+  margin: 80px;
   padding: 5px 80px;
   color: black;
 }
-.quote{
+.quote {
   font-size: 70px;
   font-weight: 800;
 }
-.author{
+.author {
   display: flex;
   justify-content: flex-end;
 }
 
-footer > ul{
+/* Skill Set Section Styling */
+
+.skills-container {
+  margin-bottom: 0;
+}
+.skill-text {
+  margin-top: 80px;
+  font-size: 80px;
+}
+.learning-align {
+  margin: 50px 0;
+  margin-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.learning-text {
+  margin-bottom: 50px;
+}
+
+footer > ul {
   display: flex;
   justify-content: space-around;
   flex-direction: row;
