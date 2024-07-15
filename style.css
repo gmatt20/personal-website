@@ -63,3 +63,37 @@ h1{
 p{
   font-size: 20px;
 }
+
+.projects{
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.proj-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  grid-auto-flow: column;
+  background-color: red;
+  min-width: 100px;
+  max-width: 800px;
+}
+.proj{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: blue;
+  margin: 10px;
+  height: 300px;
+  width: 300px;
+}
+.proj-pic{
+  background-color: red;
+  margin: 10px;
+  height: 100px;
+  width: 100px;
+}
