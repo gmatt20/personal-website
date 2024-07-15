@@ -77,14 +77,14 @@ p{
   justify-content: space-evenly;
   flex-wrap: wrap;
   grid-auto-flow: column;
-  background-color: red;
+  background-color: #254336;
   min-width: 100px;
   max-width: 800px;
 }
 .proj{
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   flex-direction: column;
   background-color: blue;
   margin: 10px;
@@ -94,6 +94,9 @@ p{
 .proj-pic{
   background-color: red;
   margin: 10px;
-  height: 100px;
-  width: 100px;
+  height: 200px;
+  width: 200px;
+}
+.proj-descript{
+  /* margin-top: 100px; */
 }
