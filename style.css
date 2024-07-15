@@ -4,13 +4,14 @@
 
 *{
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 html{
   /* height: 100%; */
 }
 body{
-  margin: 0;
-  padding: 0;
+
   /* min-height: 100%; */
   /* background-color: #254336; */
   color: #F5EFE6;
@@ -19,6 +20,7 @@ body{
 .main1{
   padding: 30px 80px;
   background-color: #254336;
+  /* background-image: url("./images/shelby-miller-hL0xl0qmxYM-unsplash.jpg"); */
 }
 
 /* Nav Configuration */
@@ -64,14 +66,36 @@ p{
   font-size: 20px;
 }
 
+.typerwriter-container{
+  position: relative;
+  text-align: center;
+}
+
+.typewriter{
+  margin-top: 100px;
+  width: 100%;
+  filter: brightness(50%);
+}
+.img-text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #F5EFE6;
+}
+
 .projects{
-  color: black;
+  margin-top: 100px;
+  background-color: #254336;
+  color: #F5EFE6;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
 .proj-container{
+  margin: 100px;
+  color: black;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -82,21 +106,34 @@ p{
   max-width: 800px;
 }
 .proj{
+  border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   flex-direction: column;
-  background-color: blue;
+  background-color: #F5EFE6;
   margin: 10px;
   height: 300px;
   width: 300px;
 }
 .proj-pic{
+  border-radius: 5px;
   background-color: red;
   margin: 10px;
   height: 200px;
   width: 200px;
 }
-.proj-descript{
-  /* margin-top: 100px; */
+
+.quote-container{
+  margin: 100px;
+  padding: 5px 80px;
+  color: black;
+}
+.quote{
+  font-size: 70px;
+  font-weight: 800;
+}
+.author{
+  display: flex;
+  justify-content: flex-end;
 }
