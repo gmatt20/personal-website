@@ -31,7 +31,7 @@ header {
 nav {
   display: flex;
   justify-content: space-between;
-  padding: 5px 80px;
+  padding: 0 80px;
 }
 nav ul {
   display: flex;
@@ -39,6 +39,17 @@ nav ul {
   align-items: center;
   gap: 50px;
   list-style: none;
+}
+nav ul li{
+    padding: 10px 15px;
+}
+nav ul li:hover{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #536f63;;
+  height: 100%;
+  color: white;
 }
 a {
   color: black;
@@ -173,5 +184,5 @@ footer > ul {
   align-items: center;
   gap: 50px;
   list-style: none;
-  padding: 10px 80px;
+  padding: 50px 80px;
 }
