@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Asset&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Gugi&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Notable&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Asset&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Gugi&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Notable&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Asset&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Gugi&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Notable&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 /* General Styling */
@@ -24,7 +24,7 @@
 body {
   background-color: var(--secondary);
   color: var(--text-color);
-  font-family: var(--font-family)
+  font-family: var(--font-family);
 }
 .main1 {
   padding: 50px 200px;
@@ -131,7 +131,7 @@ p {
 
 /* About Section */
 
-.about-h1{
+.about-h1 {
   text-align: center;
   margin-bottom: 30px;
 }
@@ -176,7 +176,7 @@ p {
 .about-images {
   max-width: 50%;
 }
-.ul-margin{
+.ul-margin {
   margin-left: 30px;
 }
 
@@ -259,6 +259,47 @@ p {
 .skill-text {
   margin-bottom: var(--h1-margin);
   font-size: var(--h1-font-size);
+}
+
+/* Pricing Section */
+
+.pricing-section {
+  color: black;
+  padding: 50px 100px 0 80px;
+}
+.pricing-text {
+  text-align: center;
+}
+.pricing-container {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+}
+.pricing-text-in {
+  color: #ffa823;
+  font-size: 1.3rem;
+  width: 100%;
+}
+.pricing-container h2 {
+  font-size: 2.5rem;
+}
+.monthly-plan {
+  
+}
+.monthly {
+  color: rgb(200, 200, 200);
+  font-size: 20px;
+}
+.basic,
+.professional,
+.subscription {
+  color: white;
+  background-color: #657e72;
+  margin: 0 30px 0 30px;
+  padding: 50px;
+  max-height: 50%;
+  min-width: 20%;
+  border-radius: 30px;
 }
 
 /* Contacts Section */
