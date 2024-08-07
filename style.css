@@ -8,7 +8,7 @@
   --nav-padding: 0 80px;
   --general-paddng: 100px 80px;
   --text-color: #f5efe6;
-  --h1-font-size: 80px;
+  --h1-font-size: 5rem;
   --footer-padding: 30px 80px;
   --h1-margin: 30px;
   --font-family: "Poppins", sans-serif;
@@ -25,14 +25,14 @@ body {
   font-family: "Poppins", sans-serif;
 }
 .main1 {
-  padding: var(--general-paddng);
+  padding: 50px 200px;
   background-color: var(--primary);
 }
 h1 {
-  font-size: 50px;
+  font-size: 3rem;
 }
 p {
-  font-size: 20px;
+  font-size: 1.3rem;
 }
 
 /* Nav Styling */
@@ -73,12 +73,18 @@ a {
 
 .landing-info {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 .landing-h1 {
-  line-height: 55px;
   margin-bottom: 50px;
+}
+.landing-h1,
+p {
+  width: 80%;
+}
+.image-pot {
+  max-width: 50%;
 }
 
 /* Background Image Section Styling */
@@ -104,42 +110,46 @@ a {
 
 /* About Section */
 
-.about-section{
+.about-section {
   color: black;
   padding: var(--general-paddng);
 }
-.first-image{
+.first-image {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
 }
-.first-image p{
+.first-image p {
   width: 40%;
 }
-.image-border{
+.image-border {
   border-radius: 30px;
 }
-.second-image{
+.second-image {
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
   justify-content: space-between;
 }
-.seond-image p{
+.seond-image p {
   width: 40%;
 }
-.third-image{
+.third-image {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
 }
-.third-image p{
+.third-image p {
   width: 100%;
 }
-.thanks-text{
+.thanks-text {
   font-size: 30px;
+  margin: 30px auto;
+}
+.about-images {
+  max-width: 50%;
 }
 
 /* Project Showcase Section + Skill Set Section Styling */
@@ -198,14 +208,19 @@ a {
 .quote-container {
   padding: var(--general-paddng);
   color: black;
+  width: 100%;
 }
-.quote {
+.quote-text {
+  margin: 0 auto;
   font-size: var(--h1-font-size);
   font-weight: 800;
+  width: 100%;
+}
+.quote {
+  max-width: 100%;
 }
 .author {
-  display: flex;
-  justify-content: flex-end;
+  margin-top: 30px;
 }
 
 /* Skill Set Section Styling */
@@ -215,6 +230,8 @@ a {
   font-size: var(--h1-font-size);
 }
 
+/* Contacts Section */
+
 .contacts-section {
   padding: var(--general-paddng);
 }
@@ -222,15 +239,12 @@ a {
   padding: var(--general-paddng);
   display: flex;
   gap: 10%;
-  /* justify-content: space-between; */
-  /* gap: 30%; */
   background-color: var(--primary);
   color: var(--text-color);
   width: 100%;
 }
 input {
   display: inline;
-  /* flex-direction: column; */
   margin-bottom: 10px;
   padding: 10px;
   border: 2px solid black;
@@ -253,7 +267,6 @@ i {
   margin-bottom: 10px;
 }
 .bold {
-  /* margin-top: 10px; */
   font-size: 20px;
   font-weight: bold;
   color: var(--text-color);
@@ -268,14 +281,9 @@ i {
   vertical-align: top;
   height: 80px;
 }
-button:hover {
-  cursor: pointer;
-  background-color: rgb(147, 46, 147);
-}
 
-/* .footer-links{
-  font-size: 30px;
-} */
+/* Footer Section */
+
 footer {
   background-color: #071911;
   padding: var(--footer-padding);
@@ -296,7 +304,6 @@ footer a:hover {
 }
 
 footer ul {
-  /* list-style-type: none; */
   padding: 0;
   margin-left: 30px;
 }
@@ -304,9 +311,170 @@ footer ul {
 footer ul li {
   margin: 5px 0;
 }
-.socials ul{
+.socials ul {
   margin: 0;
   display: flex;
   gap: 10px;
   list-style-type: none;
+}
+
+@media only screen and (max-width: 800px) {
+  /* Nav Styling */
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+  }
+  nav ul {
+    display: inherit;
+    flex-direction: column;
+    align-items: center;
+    gap: 1px;
+  }
+
+  /* Landing Section Styling */
+
+  .main1 {
+    max-width: 100%;
+    padding: 30px 50px;
+  }
+  .landing-info {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .landing-h1 {
+    font-size: 1.5rem;
+    line-height: 35px;
+    margin-bottom: 20px;
+  }
+  .landing-h1,
+  p {
+    width: 100%;
+  }
+  .landing-text {
+    font-size: 1rem;
+  }
+  .image-pot {
+    max-width: 80%;
+  }
+
+  /* Background Image Section Styling */
+  .img-text {
+    font-size: 3.5rem;
+  }
+
+  /* About Section */
+
+  .about-section {
+    color: black;
+    padding: 0 20px;
+  }
+  .first-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .first-image p {
+    width: 90%;
+  }
+  .second-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .seond-image p {
+    width: 90%;
+  }
+  .third-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .third-image p {
+    width: 100%;
+  }
+  .thanks-text {
+    font-size: 30px;
+  }
+  .about-images {
+    max-width: 100%;
+  }
+
+  /* Project Showcase Section + Skill Set Section Styling */
+
+  .proj-h1 {
+    font-size: 3rem;
+  }
+  .projects-section,
+  .skills-section {
+    padding: 30px;
+  }
+  .proj-container,
+  .skills-container {
+    max-width: 100%;
+  }
+  .proj,
+  .skills {
+    margin: 10px;
+    height: 100%;
+    width: 100%;
+  }
+  .proj-pic {
+    height: 80%;
+    width: 80%;
+  }
+
+  /* Quote Section Styling */
+
+  .quote-container {
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    align-items: end;
+  }
+  .quote-text {
+    font-size: 2rem;
+  }
+  .author p {
+    font-size: 1rem;
+  }
+
+  /* Skill Set Section Styling */
+
+  .skill-text {
+    font-size: 3rem;
+  }
+
+  /* Contacts Section */
+
+  .contacts-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  .contacts-container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Footer Section */
+
+  footer {
+    background-color: #071911;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-links,
+  .socials,
+  .attributions {
+    margin-bottom: 30px;
+  }
 }
