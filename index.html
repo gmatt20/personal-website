@@ -6,6 +6,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css" />
     <title>Matthew Garcia | Home</title>
   </head>
@@ -42,8 +48,7 @@
           <img
             src="./images/monstera-deliciosa-plant-pot.png"
             alt="Pot of plant"
-            height="500"
-          />
+            height="500" />
         </div>
       </section>
     </main>
@@ -54,8 +59,7 @@
       <img
         class="typewriter"
         src="./images/shelby-miller-hL0xl0qmxYM-unsplash.jpg"
-        alt="background image"
-      />
+        alt="background image" />
       <div>
         <h1 class="img-text">Creativity</h1>
       </div>
@@ -66,8 +70,7 @@
     <main class="projects-section">
       <section>
         <h1 class="proj-h1">My Projects</h1>
-        <div class="proj-container js-proj-container">
-        </div>
+        <div class="proj-container js-proj-container"></div>
       </section>
     </main>
 
@@ -88,7 +91,49 @@
     <main class="skills-section">
       <section>
         <h1 class="skill-text">My Skill Set</h1>
-        <div class="skills-container">
+        <div class="skills-container"></div>
+      </section>
+    </main>
+
+    <!-- Contact Section -->
+
+    <main class="contacts-section">
+      <section>
+        <div class="contacts-container">
+          <div class="left-container">
+            <div class="block">
+              <i class="fa-solid fa-location-dot"></i>
+              <p class="bold">Address</p>
+              <p class="description">900 University Ave, Riverside, CA 92521</p>
+            </div>
+            <div class="block">
+              <i class="fa-solid fa-phone"></i>
+              <p class="bold">Phone</p>
+              <p class="description">714-351-4841</p>
+            </div>
+            <div class="block">
+              <i class="fa-solid fa-envelope"></i>
+              <p class="bold">Email</p>
+              <p class="description">gmatthew2765@gmail.com</p>
+            </div>
+          </div>
+          <div class="right-container">
+            <form
+              method="post"
+              action="https://script.google.com/macros/s/AKfycbxXhNOAPCwnAM3C4E-ecSqOocY28NyKHCVTZewkRiH-x0r5hJCZuIN7aG3Al5JVBAnjSA/exec"
+              name="contact-form">
+              <h1 class="contact-text">Contact Me</h1>
+              <input type="text" name="your-name" placeholder="Your Name" />
+              <input type="text" name="your-number" placeholder="Your Number" />
+              <input type="text" name="your-email" placeholder="Your Email" />
+              <textarea
+                name="message"
+                cols="30"
+                rows="10"
+                placeholder="Your Message"></textarea>
+              <input type="submit" value="Submit" id="submit" />
+            </form>
+          </div>
         </div>
       </section>
     </main>
@@ -102,6 +147,7 @@
         <li><a href="#">Contact</a></li>
       </ul>
     </footer>
+    <script src="sheets.js"></script>
     <script src="./script.js"></script>
   </body>
 </html>

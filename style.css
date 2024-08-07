@@ -2,18 +2,31 @@
 
 /* General Styling */
 
+:root {
+  --primary: #254336;
+  --secondary: #f5efe6;
+  --nav-padding: 0 80px;
+  --general-paddng: 100px 80px;
+  --text-color: #f5efe6;
+  --h1-font-size: 80px;
+  --footer-padding: 30px 80px;
+  --h1-margin: 30px;
+  --font-family: "Poppins", sans-serif;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 body {
-  color: #f5efe6;
+  background-color: var(--secondary);
+  color: var(--text-color);
   font-family: "Poppins", sans-serif;
 }
 .main1 {
-  padding: 30px 80px;
-  background-color: #254336;
+  padding: var(--general-paddng);
+  background-color: var(--primary);
 }
 h1 {
   font-size: 50px;
@@ -25,31 +38,31 @@ p {
 /* Nav Styling */
 
 header {
-  background-color: white;
+  background-color: var(--secondary);
 }
 
 nav {
   display: flex;
   justify-content: space-between;
-  padding: 0 80px;
+  padding: var(--nav-padding);
 }
 nav ul {
-  display: flex;
+  display: inherit;
   flex-direction: row;
   align-items: center;
   gap: 50px;
   list-style: none;
 }
-nav ul li{
-    padding: 10px 15px;
+nav ul li {
+  padding: 10px 15px;
 }
-nav ul li:hover{
-  display: flex;
+nav ul li:hover {
+  display: inherit;
   align-items: center;
   justify-content: center;
-  background-color: #536f63;;
+  background-color: #536f63;
   height: 100%;
-  color: white;
+  color: var(--text-color);
 }
 a {
   color: black;
@@ -81,22 +94,23 @@ a {
   filter: brightness(50%);
 }
 .img-text {
-  font-size: 80px;
+  font-size: var(--h1-font-size);
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: #f5efe6;
+  color: var(--text-color);
 }
 
 /* Project Showcase Section + Skill Set Section Styling */
 
 .proj-h1 {
-  margin-top: 80px;
-  font-size: 80px;
+  font-size: var(--h1-font-size);
+  margin-bottom: var(--h1-margin);
 }
 .projects-section,
 .skills-section {
+  padding: var(--general-paddng);
   background-color: #254336;
   color: #f5efe6;
   display: flex;
@@ -106,7 +120,6 @@ a {
 }
 .proj-container,
 .skills-container {
-  margin: 80px;
   color: black;
   display: flex;
   align-items: center;
@@ -143,12 +156,11 @@ a {
 /* Quote Section Styling */
 
 .quote-container {
-  margin: 80px;
-  padding: 5px 80px;
+  padding: var(--general-paddng);
   color: black;
 }
 .quote {
-  font-size: 70px;
+  font-size: var(--h1-font-size);
   font-weight: 800;
 }
 .author {
@@ -158,23 +170,68 @@ a {
 
 /* Skill Set Section Styling */
 
-.skills-container {
-  margin-bottom: 0;
-}
 .skill-text {
-  margin-top: 80px;
-  font-size: 80px;
+  margin-bottom: var(--h1-margin);
+  font-size: var(--h1-font-size);
 }
-.learning-align {
-  margin: 50px 0;
-  margin-bottom: 80px;
+
+.contacts-section {
+  padding: var(--general-paddng);
+}
+.contacts-container {
+  padding: var(--general-paddng);
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  gap: 10%;
+  align-items: ;
+  /* justify-content: space-between; */
+  /* gap: 30%; */
+  background-color: var(--primary);
+  color: var(--text-color);
+  width: 100%;
 }
-.learning-text {
-  margin-bottom: 50px;
+input {
+  display: inline;
+  /* flex-direction: column; */
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 2px solid black;
+  background-color: var(--text-color);
+  border-radius: 5px;
+  width: 100%;
+  font-family: var(--font-family);
+}
+textarea {
+  padding: 10px;
+  width: 100%;
+  background-color: var(--text-color);
+  border: 2px solid black;
+  border-radius: 5px;
+  font-family: var(--font-family);
+}
+i {
+  color: var(--text-color);
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.bold {
+  /* margin-top: 10px; */
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--text-color);
+}
+.description {
+  color: var(--text-color);
+}
+.block {
+  margin-bottom: 30px;
+}
+.message {
+  vertical-align: top;
+  height: 80px;
+}
+button:hover {
+  cursor: pointer;
+  background-color: rgb(147, 46, 147);
 }
 
 footer > ul {
@@ -184,5 +241,5 @@ footer > ul {
   align-items: center;
   gap: 50px;
   list-style: none;
-  padding: 50px 80px;
+  padding: var(--footer-padding);
 }
