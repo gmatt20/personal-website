@@ -1,5 +1,6 @@
 const htmlElements = {
   projectContainer: document.querySelector(".js-proj-container"),
+  skillsContainer: document.querySelector(".skills-container")
 };
 const projects = [
   {
@@ -40,6 +41,24 @@ const projects = [
   }
 ];
 
+const skills = [
+  {
+    imageSkill: "./images/icons8-html-logo-480.png",
+    altSkill: "HTML",
+    theSkill: "Hypertext Markup Language",
+  },
+  {
+    imageSkill: "./images/icons8-css-logo-480.png",
+    alt: "CSS",
+    theSkill: "Cascading Style Sheets",
+  },
+  {
+    imageSkill: "./images/icons8-javascript-480.png",
+    altSkill: "JS",
+    theSkill: "JavaScript",
+  },
+];
+
 
 document.addEventListener("DOMContentLoaded", () => {
   projects.forEach((project) => {
@@ -59,4 +78,20 @@ document.addEventListener("DOMContentLoaded", () => {
     </div>
   `;
   });
+
+  skills.forEach((skill) => {
+    htmlElements.skillsContainer.innerHTML += `
+    <div class="proj">
+      <div>
+          <img
+            class="proj-pic"
+            src=${skill.imageSkill}
+            alt=${skill.altSkill}
+            width="300"
+          />
+      </div>
+      <div class="proj-descript"><p>${skill.theSkill}</p></div>
+    </div>
+    `;
+  })
 });
