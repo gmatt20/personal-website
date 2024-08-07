@@ -102,6 +102,46 @@ a {
   color: var(--text-color);
 }
 
+/* About Section */
+
+.about-section{
+  color: black;
+  padding: var(--general-paddng);
+}
+.first-image{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.first-image p{
+  width: 40%;
+}
+.image-border{
+  border-radius: 30px;
+}
+.second-image{
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+}
+.seond-image p{
+  width: 40%;
+}
+.third-image{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.third-image p{
+  width: 100%;
+}
+.thanks-text{
+  font-size: 30px;
+}
+
 /* Project Showcase Section + Skill Set Section Styling */
 
 .proj-h1 {
@@ -263,4 +303,10 @@ footer ul {
 
 footer ul li {
   margin: 5px 0;
+}
+.socials ul{
+  margin: 0;
+  display: flex;
+  gap: 10px;
+  list-style-type: none;
 }
