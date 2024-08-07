@@ -1,11 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Asset&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Gugi&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Notable&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 /* General Styling */
 
 :root {
   --primary: #254336;
   --secondary: #f5efe6;
-  --nav-padding: 0 80px;
+  --nav-padding: 20px 80px;
   --general-paddng: 100px 80px;
   --text-color: #f5efe6;
   --h1-font-size: 5rem;
@@ -44,25 +45,42 @@ header {
 nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: var(--nav-padding);
+}
+.logo {
+  font-family: "Gugi", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  width: 100%;
+  font-size: 40px;
+  font-stretch: 150%;
+  letter-spacing: 10px;
 }
 nav ul {
   display: inherit;
   flex-direction: row;
   align-items: center;
-  gap: 50px;
+  gap: 10px;
   list-style: none;
 }
 nav ul li {
   padding: 10px 15px;
+  transition: 0.2s ease-in-out;
 }
 nav ul li:hover {
-  display: inherit;
-  align-items: center;
-  justify-content: center;
-  background-color: #536f63;
-  height: 100%;
-  color: var(--text-color);
+  color: white !important;
+  background-color: #b6c5be;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+nav ul li:active {
+  color: white !important;
+  background-color: #657e72;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
 }
 a {
   color: black;
@@ -110,6 +128,9 @@ p {
 
 /* About Section */
 
+.about-h1{
+  text-align: center;
+}
 .about-section {
   color: black;
   padding: var(--general-paddng);
@@ -142,11 +163,11 @@ p {
   justify-content: space-between;
 }
 .third-image p {
-  width: 100%;
+  width: 90%;
 }
 .thanks-text {
   font-size: 30px;
-  margin: 30px auto;
+  margin: 80px auto;
 }
 .about-images {
   max-width: 50%;
