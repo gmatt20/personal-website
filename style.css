@@ -137,7 +137,7 @@ p {
 }
 .about-section {
   color: black;
-  padding: var(--general-paddng);
+  padding: 0 80px;
 }
 .first-image {
   display: flex;
@@ -175,6 +175,9 @@ p {
 }
 .about-images {
   max-width: 50%;
+}
+.ul-margin{
+  margin-left: 30px;
 }
 
 /* Project Showcase Section + Skill Set Section Styling */
@@ -226,6 +229,9 @@ p {
 }
 .proj-descript {
   margin-bottom: 10px;
+  display: inherit;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Quote Section Styling */
@@ -447,12 +453,12 @@ footer ul li {
   .proj,
   .skills {
     margin: 10px;
-    height: 100%;
-    width: 100%;
+    height: 70%;
+    width: 70%;
   }
   .proj-pic {
-    height: 80%;
-    width: 80%;
+    height: 70%;
+    width: 70%;
   }
 
   /* Quote Section Styling */
