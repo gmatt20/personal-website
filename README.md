@@ -1,7 +1,6 @@
-Note to self (06/15/2024):
-
-- Figure out why JS container does not have borders
-- Make text and contents smaller
-- Create the about page
-- Create the contact page
-- Add animations
+- Attributions:
+- Font Awesome
+- Google Sheets | How To Send HTML Form Data To Google Sheets (Learning Axis on Youtube)
+- Unsplash
+- Icons8
+-Vecteezy
