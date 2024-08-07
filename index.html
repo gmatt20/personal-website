@@ -6,21 +6,29 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css" />
-    <title>Matthew Garcia | Home</title>
+    <title>Mental Dev | Home</title>
   </head>
   <body>
     <!-- Nav Section -->
 
     <header>
       <nav>
-        <a href="index.html"
-          ><img src="./images/succulent.png" alt="Succulent Icon" height="60"
-        /></a>
+        <a href="index.html">
+          <p class="logo">MENTAL DEV</p>
+        </a>
         <ul>
           <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#About">About</a></li>
+          <li><a href="#Projects">Projects</a></li>
+          <li><a href="#Skills">Skills</a></li>
+          <li><a href="#Contacts">Contacts</a></li>
         </ul>
       </nav>
     </header>
@@ -29,22 +37,17 @@
 
     <main class="main1">
       <section class="landing-info">
-        <div>
+        <div class="landig-descript">
           <h1 class="landing-h1">Hello, I am Matthew</h1>
-          <p>
-            Nice to meet you and thank you for stopping by! I am a beginner web
-            developer and I am passionate about mental health. My goal is to
-            combine my passions in web development and mental health to
-            communicate the importance of mental health.
+          <p class="landing-text">
+            Nice to meet you and welcome to <strong>Mental Dev!</strong>  I am a beginner web
+            developer and I am passionate about mental health.
           </p>
         </div>
-        <div>
           <img
             src="./images/monstera-deliciosa-plant-pot.png"
-            alt="Pot of plant"
-            height="600"
-          />
-        </div>
+            class="image-pot"
+            alt="Pot of plant" />
       </section>
     </main>
 
@@ -54,72 +57,93 @@
       <img
         class="typewriter"
         src="./images/shelby-miller-hL0xl0qmxYM-unsplash.jpg"
-        alt="background image"
-      />
+        alt="background image" />
       <div>
         <h1 class="img-text">Creativity</h1>
       </div>
     </section>
 
+    <!-- About Me -->
+
+    <main class="about-section" id="About">
+      <section>
+        <h1 class="about-h1">About Me</h1>
+        <div class="about-container">
+          <div class="first-image">
+            <br>
+            <p>
+              Hello! I'm Matthew, and I have a for mental health. My journey into the
+              world of psychology began with a deep curiosity about the human
+              mind and a desire to help others navigate their mental and
+              emotional well-being.
+              <br />
+              <br />
+              Through volunteering for the underrepresented communities in
+              Riverside, I have found a satisfying and deep pleasure in
+              releasing the burdens of suffering of the human condition through
+              humor and optimism. This has lead me to pursue to be a clinical
+              psychologist.
+            </p>
+            <br>
+            <br>
+            <img
+              src="./images/25233.jpg"
+              class="image-border about-images"/>
+          </div>
+          <br />
+          <br>
+          <div class="second-image">
+            <p>
+              While pursuing my studies in psychology, I discovered the power of
+              technology to communicate the importance of mental health. This
+              realization led me to combine my love for programming with my
+              commitment to mental health. I believe that digital tools and
+              platforms can play a transformative role in making mental health
+              resources more accessible, engaging, and effective.
+            </p>
+            <img
+              class="about-images"
+              src="./images/stem-education-isometric-concept-s-composition-with-image-human-brain-with-infographic-screens-illustration.png" />
+          </div>
+          <br />
+          <div class="third-image">
+            <div>
+              <p>
+                Through my work, I aim to create applications that promote
+                reflection, self-awareness, and emotional resilience. Whether
+                it's through interactive mental health apps, insightful blogs,
+                or purposeful websites, I strive to communicate the importance
+                of mental health in our daily lives.
+              </p>
+              <br />
+              <p>
+                As I continue on my journey to becoming a psychologist, I am
+                dedicated to using programming as a medium to support and uplift
+                those who may be struggling. I believe that by merging
+                technology with psychology, we can create innovative solutions
+                that foster a healthier, more compassionate world.
+              </p>
+              <br>
+            </div>
+            <img
+              src="./images/mental-health-wellness-composition-with-isometric-icons-human-organ-gear-tools-emotional-reactions-people-vector-illustration.png"
+              class="about-images" />
+            <br />
+          </div>
+          <p class="thanks-text">
+            Thank you for joining me on this journey, and I look forward to
+            sharing my passion for mental health and technology with you.
+          </p>
+        </div>
+      </section>
+    </main>
+
     <!-- Project Showcase Section -->
 
-    <main class="projects-section">
+    <main class="projects-section" id="Projects">
       <section>
         <h1 class="proj-h1">My Projects</h1>
-        <div class="proj-container">
-          <div class="proj">
-            <div>
-              <a href="https://gmatt20.github.io/odin-landing-page/">
-                <img
-                  class="proj-pic"
-                  src="./images/Screenshot 2024-07-15 at 3.10.43 AM.png"
-                  alt="Odin Landing Page"
-                  width="300"
-                />
-              </a>
-            </div>
-            <div class="proj-descript"><p>Odin Landing Page.</p></div>
-          </div>
-          <div class="proj">
-            <div>
-              <a href="https://gmatt20.github.io/blog-preview-card-main/">
-                <img
-                  class="proj-pic"
-                  src="./images/Screenshot 2024-07-15 at 3.13.02 AM.png"
-                  alt="Blog Preview Card."
-                  width="300"
-                />
-              </a>
-            </div>
-            <div class="proj-descript"><p>Blog Preview Card.</p></div>
-          </div>
-          <div class="proj">
-            <div>
-              <a href="https://gmatt20.github.io/my-social-links-profile/">
-                <img
-                  class="proj-pic"
-                  src="./images/Screenshot 2024-07-15 at 3.12.16 AM.png"
-                  alt="Social Links Profile"
-                  width="300"
-                />
-              </a>
-            </div>
-            <div class="proj-descript"><p>Social Links Profile.</p></div>
-          </div>
-          <div class="proj">
-            <div>
-              <a href="https://gmatt20.github.io/CC-UI/">
-                <img
-                  class="proj-pic"
-                  src="./images/Screenshot 2024-07-15 at 3.09.53 AM.png"
-                  alt="Credit Card UI"
-                  width="300"
-                />
-              </a>
-            </div>
-            <div class="proj-descript"><p>Credit Card UI.</p></div>
-          </div>
-        </div>
+        <div class="proj-container js-proj-container"></div>
       </section>
     </main>
 
@@ -127,7 +151,7 @@
 
     <section class="quote-container">
       <div class="quote">
-        <p class="quote">
+        <p class="quote-text">
           "When I look at the world I'm pessimistic, but when I look at people I
           am optimistic."
         </p>
@@ -137,29 +161,51 @@
 
     <!-- Skill Set Section -->
 
-    <main class="skills-section">
+    <main class="skills-section" id="Skills">
       <section>
         <h1 class="skill-text">My Skill Set</h1>
-        <div class="skills-container">
-          <div class="skills">
-            <img
-              src="./images/icons8-html-logo-480.png"
-              alt="HTML"
-              width="200"
-            />
+        <div class="skills-container"></div>
+      </section>
+    </main>
+
+    <!-- Contact Section -->
+
+    <main class="contacts-section" id="Contacts">
+      <section>
+        <div class="contacts-container">
+          <div class="left-container">
+            <div class="block">
+              <i class="fa-solid fa-location-dot"></i>
+              <p class="bold">Address</p>
+              <p class="description">900 University Ave, Riverside, CA 92521</p>
+            </div>
+            <div class="block">
+              <i class="fa-solid fa-phone"></i>
+              <p class="bold">Phone</p>
+              <p class="description">714-351-4841</p>
+            </div>
+            <div class="block">
+              <i class="fa-solid fa-envelope"></i>
+              <p class="bold">Email</p>
+              <p class="description">gmatthew2765@gmail.com</p>
+            </div>
           </div>
-          <div class="skills">
-            <img src="./images/icons8-css-logo-480.png" alt="CSS" width="200" />
-          </div>
-        </div>
-        <div class="learning-align">
-          <h1 class="learning-text">Currently Learning...</h1>
-          <div class="skills">
-            <img
-              src="./images/icons8-javascript-480.png"
-              alt="Javascript"
-              width="200"
-            />
+          <div class="right-container">
+            <form
+              method="post"
+              action="https://script.google.com/macros/s/AKfycbxXhNOAPCwnAM3C4E-ecSqOocY28NyKHCVTZewkRiH-x0r5hJCZuIN7aG3Al5JVBAnjSA/exec"
+              name="contact-form">
+              <h1 class="contact-text">Contact Me</h1>
+              <input type="text" name="your-name" placeholder="Your Name" />
+              <input type="text" name="your-number" placeholder="Your Number" />
+              <input type="text" name="your-email" placeholder="Your Email" />
+              <textarea
+                name="message"
+                cols="30"
+                rows="10"
+                placeholder="Your Message"></textarea>
+              <input type="submit" value="Submit" id="submit" />
+            </form>
           </div>
         </div>
       </section>
@@ -168,11 +214,95 @@
     <!-- Footer Section -->
 
     <footer>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
+      <div class="footer-links">
+        <p>Quick Links</p>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#About">About</a></li>
+          <li><a href="#Projects">Projects</a></li>
+          <li><a href="#Skills">Skills</a></li>
+          <li><a href="#Contacts">Contacts</a></li>
+        </ul>
+      </div>
+      <div class="socials">
+        <p>Get To Know Me Better</p>
+        <ul>
+          <li>
+            <a href="https://www.linkedin.com/in/mattg2765/" target="_blank"
+              ><i class="fa-brands fa-linkedin" style="color: #0288d1"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://github.com/gmatt20" target="_blank"
+              ><i class="fa-brands fa-square-github"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+      <div class="attributions">
+        <p>&copy; 2024 Mental Dev. All rights reserved.</p>
+        <br>
+        <p><strong>Resources used:</strong></p>
+        <ul>
+          <li>
+            Contacts Icons made by
+            <a
+              href="https://fontawesome.com/"
+              title="Font Awesome"
+              target="_blank"
+              >Font Awesome</a
+            >
+          </li>
+          <li>
+            Google Sheets Link Tutorial by
+            <a
+              href="https://www.youtube.com/watch?v=jdIntB1J-i8&t=305s"
+              title="Learning Axis"
+              target="_blank"
+              >Learning Axis</a
+            >
+          </li>
+          <li>
+            Background images from
+            <a href="https://unsplash.com/" title="Unsplash" target="_blank"
+              >Unsplash</a
+            >
+          </li>
+          <li>
+            Web font from
+            <a
+              href="https://fonts.google.com"
+              title="Google Fonts"
+              target="_blank"
+              >Google Fonts</a
+            >
+          </li>
+          <li>
+            General Icons by
+            <a href="https://icons8.com/icons" title="Icons8" target="_blank"
+              >Icons8</a
+            >
+          </li>
+          <li>
+            Plant PNG by
+            <a
+              href="https://www.vecteezy.com/?utm_source=google&utm_medium=cpc&utm_campaign=brand&utm_term=vecteezy&utm_content=us&gad_source=1&gclid=CjwKCAjwk8e1BhALEiwAc8MHiAy3lvCKQGQBHNDysIvkxk_Mmu0m3PYrnSQzLa6xf6GxaTU28kbp8hoC3JYQAvD_BwE"
+              title="Vecteezy"
+              target="_blank"
+              >Vecteezy
+            </a>
+          </li>
+          <li>
+            Isometric immages by
+            <a href="https://www.freepik.com" target="_blank"
+              >macrovector on Freepik</a
+            >
+          </li>
+          <!-- Add more attributions as needed -->
+        </ul>
+      </div>
     </footer>
+    <script src="sheets.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>
