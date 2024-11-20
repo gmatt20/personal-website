@@ -54,8 +54,18 @@ const skills = [
   },
   {
     imageSkill: "./images/icons8-javascript-480.png",
-    altSkill: "JS",
+    altSkill: "JavaScript",
     theSkill: "JavaScript",
+  },
+  {
+    imageSkill: "./images/react.webp",
+    altSkill: "React",
+    theSkill: "React",
+  },
+  {
+    imageSkill: "./images/tailwind-css.png",
+    altSkill: "Tailwind CSS",
+    theSkill: "Tailwind CSS",
   },
 ];
 
