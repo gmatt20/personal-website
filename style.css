@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Asset&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Gugi&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Notable&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Asset&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Gugi&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Notable&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
 /* General Styling */
 
@@ -20,7 +21,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  line-height: 1.6;
 }
 body {
   background-color: var(--secondary);
@@ -101,9 +101,9 @@ a {
   margin-bottom: 50px;
   font-size: 3rem;
 }
-.landing-h1,
-p {
+.landing-text{
   width: 80%;
+  line-height: 2.5rem;
 }
 .image-pot {
   max-width: 50%;
@@ -139,48 +139,33 @@ p {
 .about-section {
   color: black;
   padding: 0 80px;
-  width: 100%;
-}
-.first-image {
-  /* display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between; */
-  width: 100%;
-}
-.first-image p {
-  width: 100%;
-}
-.image-border {
-  border-radius: 30px;
-}
-.second-image {
   display: flex;
-  flex-direction: row-reverse;
+  justify-content: center;
   align-items: center;
-  justify-content: space-between;
+  margin: 0 100px 0 100px;
 }
-.seond-image p {
-  width: 40%;
-}
-.third-image {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-}
-.third-image p {
-  width: 90%;
+.about-container > p{
+  width: 100%;
+  line-height: 3rem;
 }
 .thanks-text {
   font-size: 30px;
   margin: 80px auto;
 }
-.about-images {
-  max-width: 50%;
-}
 .ul-margin {
   margin-left: 30px;
+}
+.why-choose-me{
+  text-align: center;
+  margin-bottom: 30px;
+}
+.why-choose-me-container > p{
+  width: 100%;
+  line-height: 3rem;
+}
+.why-choose-me-container > ul > li > p{
+  width: 100%;
+  line-height: 3rem;
 }
 
 /* Project Showcase Section + Skill Set Section Styling */
@@ -245,8 +230,9 @@ p {
   width: 100%;
 }
 .quote-text {
+  font-family: "Lobster", sans-serif;
   margin: 0 auto;
-  font-size: var(--h1-font-size);
+  font-size: 3rem;
   font-weight: 800;
   width: 100%;
 }
@@ -268,7 +254,7 @@ p {
 
 .pricing-section {
   color: black;
-  padding: 50px 100px 80px 80px;
+  padding: 50px 100px 0 80px;
 }
 .pricing-text {
   text-align: center;
@@ -530,7 +516,7 @@ footer ul li {
 
   .pricing-section {
     color: black;
-    padding: 0;
+    padding: 30px;
   }
   .pricing-text {
     text-align: center;
@@ -540,6 +526,7 @@ footer ul li {
     display: flex;
     flex-direction: column;
     gap: 30px;
+    padding: 50px;
   }
   .pricing-text-in {
     color: #ffa823;
@@ -548,8 +535,6 @@ footer ul li {
   }
   .pricing-container h2 {
     font-size: 2.5rem;
-  }
-  .monthly-plan {
   }
   .monthly {
     color: rgb(200, 200, 200);
